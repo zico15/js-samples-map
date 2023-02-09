@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+ @license
+ Copyright 2019 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<html id="main">
+
+<head>
+  <title>Simple Map</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module" src="./index.ts"></script>
+</head>
+
+<body>
+  <div style="display: inline; margin: 20px; padding: 50px; height: 50px;">
+    <button id="trigger" style="height: 30px;" value="Start">Start</button>
+    <button id="save" style="height: 30px;">Save </button>
+    <label >lat</label>
+    <input type="text" id="lat" placeholder="Latitude" style="height: 20px;" />
+    <label >-></label>
+    <input type="text" id="latEnd" placeholder="Width" value="1000" style="height: 20px;" />
+    <label >lng</label>
+    <input type="text" id="lng" placeholder="Longitude" style="height: 20px; margin-left: 10px;" />
+    <label >-></label>
+    <input type="text" id="lngEnd" placeholder="Height" value="1000" style="height: 20px;" />
+    <input type="text" id="zoom" placeholder="Zoom" value="0.0010" style="height: 20px;" />
+  </div>
+  <div id="map"></div>
+
+
+  <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNSORqppEymyIWQ5iutl7MHRaqcGrcfhM&callback=initMap">
+    
+    </script>
+ 
+</body>
+
+</html>
+

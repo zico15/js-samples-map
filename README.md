@@ -15,4 +15,5 @@ npm run build  # production
 
 For feedback related to this sample, please open a new issue on
 [GitHub](https://github.com/googlemaps/js-samples/issues).
+
 node install https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu
